@@ -1,0 +1,105 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+  color: whitesmoke;
+  font-family: Anton;
+}
+
+@font-face {
+  font-family: Anton;
+  src: url(Media/Anton/Anton-Regular.ttf);
+}
+
+.fa-sharp {
+  font-size: 40px;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+body {
+  background-image: url("Media/Home_highway.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  gap: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 120px;
+}
+
+.title h2 {
+  font-size: 40px;
+}
+
+.quote {
+  border: 5px solid goldenrod;
+  box-sizing: border-box; /*box-sizing property houdt je element de aangegeven grootte ongeacht de padding die je geeft*/
+  text-align: center;
+  font-size: 50px;
+  padding: 20px 20px;
+  margin: 160px 40px 0px 40px;
+  background-color: rgb(128, 128, 128, 0.6);
+}
+
+.special {
+  color: goldenrod;
+}
+
+/* Arrow */
+
+.arrow {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.arrow .curve {
+  border: 8px solid #be5f4b;
+  border-color: transparent transparent transparent goldenrod;
+  height: 170px;
+  width: 800px;
+  border-radius: 230px 0 0 150px;
+}
+
+.arrow .point {
+  position: absolute;
+  left: 18px;
+  top: 155px;
+}
+
+.arrow .point:before,
+.arrow .point:after {
+  border: 3px solid goldenrod;
+  height: 25px;
+  content: "";
+  position: absolute;
+}
+
+.arrow .point:before {
+  top: -11px;
+  left: -11px;
+  transform: rotate(-74deg);
+  -webkit-transform: rotate(-74deg);
+  -moz-transform: rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+  left: 5px;
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+}

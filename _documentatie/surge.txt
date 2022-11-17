@@ -1,0 +1,35 @@
+Surge
+Installeer NodeJS
+type CMD (of bash op Apple) en voer het volgende commando in: npm i surge -g
+navigeer naar de web folder die je wel online zetten en typ: surge
+volg de stappen (tip gebruik een zeer eenvoudig paswoord)
+Meer informatie hier:
+
+https://surge.sh/
+
+Installing surge
+can be installed with npm
+
+command:
+
+npm install --global surge
+
+Some Code
+function logSomething(something) {
+  console.log("Something", something);
+}
+run surge first time
+surge
+
+it will prompt for project folder confirmation & make a new host name for you
+
+host the same version of your site gain
+Ideally, you want to decide yourself everytime
+
+To host a new version of the same website, without surge proposing to host it in a new place
+
+You should do:
+
+surge [project folder] [host name]
+
+example: surge . karim-html-css-syntra_2023.surge.sh

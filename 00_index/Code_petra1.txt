@@ -1,0 +1,64 @@
+<body>
+      <header>
+        <nav class="flex-container">
+          <h1 class="titel">
+            <a href="/syntra_html/Pagina_Petra/index.html"
+              >petr<span style="text-decoration-line: overline">A.site</span></a
+            >
+          </h1>
+          <ul class="menu">
+            <li>
+              <a class="active" href="/syntra_html/Pagina_Petra/syntra.html"
+                >Syntra</a
+              >
+            </li>
+            <li>Javascript</li>
+            <li>HTML/CSS</li>
+            <li>PHP</li>
+            <li>Projectmanagement</li>
+            <li>
+              <a
+                href="https://syntra-fsd-2023.slack.com/ssb/redirect"
+                target="_blank"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/default.asp" target="_blank"
+                ><img src="/syntra_html/Pagina_Petra/Media/W3schools.png"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="heading">
+        <main class="tekst">
+          <h1>
+            When Driving on the Highway of
+            <span style="color: goldenrod">Learning</span>
+          </h1>
+          <h3>there will be Different Directions and Roads</h3>
+          <p>
+            to find all YOUR <br />
+            POSSIBILITIES and SKILLS
+          </p>
+          <p>
+            <button class="button">
+              <a href="https://www.creativeskills.be/" target="_blank"
+                ><img
+                  src="/syntra_html/Pagina_Petra/Media/Creativeskills.png"
+                  alt="logo"
+                  style="float: left"
+                />
+                creativeskills.be</a
+              >
+            </button>
+          </p>
+        </main>
+      </section>
+    </body>
+  </head>
+</html>
+
+

@@ -1,6 +1,5 @@
 To do:
 
-* profielpagina aanpassen met linken
-* alle projecten bij werken
-* site van Karim nalezen
-* gitHub niet in één grote map?
+* mijn homepage aanpassen alle linken naar de oefeningen
+* alle oefeningen nakijken en proberen maken (code?)
+* site van Karim nalezen!
