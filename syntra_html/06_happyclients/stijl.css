@@ -1,0 +1,183 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 100%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hier komt jouw css */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+  font-family: customFont1;
+  src: url(media/fonts/BAUHS93.TTF);
+}
+
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+  font-family: Lato;
+  src: url(media/fonts/Lato-Regular.ttf);
+}
+
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+  font-family: Fasthand;
+  src: url(media/fonts/Fasthand-Regular.ttf);
+}
+
+body {
+  /** set the url of the image **/
+  background-image: url(media/images/berg.png);
+  /** set image size to "cover, this will ensure the images always covers either the maximum amount of height of width (whatever it is reaching first) **/
+  background-size: cover; /** alternatively set to 100% **/
+  /** to ensure we do not repeat the background image **/
+  background-repeat: no-repeat;
+  /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
+  background-color: rgba(209, 209, 209, 0.644);
+  /* to set padding to the body left & right*/
+  font-family: Lato;
+}
+
+nav {
+  align-items: center;
+  padding: 10px;
+  background-color: #f38181;
+  width: 100%;
+}
+
+nav img {
+  height: 100%;
+}
+
+nav,
+nav section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav section {
+  gap: 3rem;
+  color: white;
+}
+
+nav section ul {
+  display: flex;
+  text-transform: uppercase;
+  gap: 3rem;
+  font-weight: 500;
+}
+
+#current {
+  color: gold;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  position: relative;
+}
+
+#current:after {
+  content: "";
+  background: gold;
+  position: absolute;
+  top: 1.4rem;
+  left: 0;
+  height: 3px;
+  width: 100%;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header h1 {
+  padding: 10px;
+  font-size: 2rem;
+  font-family: Fasthand;
+}
+
+header h2 {
+  padding: 10px;
+  font-size: 2rem;
+  position: relative;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
+  padding: 0 15vw;
+}
+
+article {
+  width: 600px;
+  height: 170px;
+  display: flex;
+  justify-content: space-around;
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+article p {
+  line-height: 1.5rem;
+  color: #888;
+}
+
+article h3 {
+  text-transform: uppercase;
+}
+
+article h4 {
+  font-style: italic;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+article h4::after,
+header h2::after {
+  content: "";
+  background: #f38181;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  height: 4px;
+  width: 60px;
+}
+
+header h2:after {
+  top: 60px;
+  left: calc(100% - (50% + 30px));
+}

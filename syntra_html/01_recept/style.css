@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(43, 159, 226);
+}
+
+h3 {
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+
+  p {
+    background-color: rgb(175, 149, 200);
+  } 
+
+  li:hover{
+    background-color: rgb(228, 237, 147);
+  }
+
+  .opgelet {
+    background-color: rgb(216, 167, 77);
+  }
+
+p {
+  height: 100px;
+  width: 800px;
+  background-color: rgb(219, 237, 240);
+}
+img {
+    float: left;
+  }

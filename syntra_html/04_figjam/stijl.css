@@ -1,0 +1,103 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+} /* 1rem = 10px */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* dit selecteert de ul in het nav element. 
+flex wordt toegepast op parent ul voor alle li*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  background-color: #699bf7;
+}
+
+nav {
+  /* we zetten hier achtergrond kleur op wit in, omdat anders het blauw zal zijn, zie hierboven */
+  background-color: white;
+}
+
+/* dit selecteert de ul binnen het nav element*/
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  /*hierdoor gaat de tekst bij responsive naar beneden*/
+}
+
+/* dit selecteert de li, binnen de ul binnen het nav element*/
+nav ul li {
+  padding: 34px 34px 39px 34px;
+  /*pointer zorgt ervoor dat je een "handje" krijgt, klassiek gebruikt voor links*/
+}
+
+nav ul li:hover {
+  /* easy way */
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+aside {
+  background-color: #c8b8ff;
+  padding: 22px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  /*dit zorgt ervoor,
+    dat als de elementen niet meer in de huidige flex configuratie passen
+    ze op een nieuwe lijn komen */
+  flex-wrap: wrap-reverse;
+  /*
+    als de elementen elk op aparte lijn komen, worden ze gecentreerd
+    */
+  justify-content: space-around;
+  /*
+    vh staat voor view height
+    vw staat voor view width
+    deze unit is percentage van je viewport
+    als je volledige breeddte 1000px is
+    dan is 10vw gelijk aan 100px
+    */
+  padding: 62px 11vw;
+  /* enkel wanneer flex wrap geactiveerd wordt, komt er ruimte van 36px tussen de afbeelding en tekst */
+  row-gap: 36px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 400px;
+}
+
+article h1 {
+  font-size: 2.1rem;
+}
+
+article h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+article section {
+  line-height: 25px;
+}
+
+article button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 16px 27px;
+  width: fit-content; /* neemt de breedte van de content*/
+  border-radius: 4px;
+}

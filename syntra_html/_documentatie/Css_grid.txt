@@ -1,0 +1,16 @@
+grid-column-start: (n);
+grid-column-end: (n);
+grid-column:;
+grid-row:;
+
+grid-area:; grid-row-start, grid-column-start, grid-row-end, gevolgd door grid-column-end.
+
+order: (n);
+
+grid-template-columns:;
+grid-template-columns: repeat(8, 12.5%);
+
+px, em, %
+fr (fractie)
+
+grid-template:;

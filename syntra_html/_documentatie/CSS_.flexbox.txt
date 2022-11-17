@@ -1,0 +1,52 @@
+** justify-content (horizontaal)
+
+flex-start: Elementen aan de linkerkant van de container uitlijnen.
+flex-end: Elementen aan de rechterkant van de container uitlijnen.
+center: Elementen in het midden van de container uitlijnen.
+space-between: Elementen worden gedistribueerd over de volledige dimensie en krijgen een gelijke spatiëring tussen hun.
+space-around: Elementen worden gedistribueerd over de volledige dimensie en krijgen een gelijke spatiëring rondom hun.
+
+** align-items (verticaal)
+
+flex-start: Elementen worden uitgelijnd naar de bovenkant van de container.
+flex-end: Elementen worden uitgelijnd naar de onderkant van de container.
+center: Elementen worden uitgelijnd op het verticaal middelpunt van de container.
+baseline: Elementen worden uitgelijnd op de basislijn van de container.
+stretch: Elementen worden uitgerokken om binnen de container te passen.
+
+	=> kan ook toegpast worden op align-self
+
+** flex-direction
+
+row: Elementen worden geplaatst in dezelfde richting als deze van de tekst.
+row-reverse: Elementen worden geplaatst in de tegenovergestelde richting van de tekst.
+column: Elementen worden onder elkaar geplaatst.
+column-reverse: Elementen worden boven elkaar geplaatst.
+
+** order
+
+om de volgode te wijzigen (bv.order: 3 of ook -3)
+
+** flex-wrap
+
+nowrap: Alle elementen worden samengepakt op een enkele lijn.
+wrap: Elementen worden over meerdere lijnen gewikkeld.
+wrap-reverse: Elementen worden over meerdere lijnen in omgekeerde richting gewikkeld.
+
+** align-content
+
+flex-start: Lijnen worden aan de bovenzijde van de container verpakt.
+flex-end: Lijnen worden aan de onderzijde van de container verpakt.
+center: Lijnen worden op het verticale center van de container verpakt.
+space-between: Lijnen worden gedistribueerd over de volledige dimensie en krijgen een gelijke spatiëring tussen elke lijn.
+space-around: Lijnen worden gedistribueerd over de volledige dimensie en krijgen een gelijke spatiëring rond elke lijn.
+stretch: Lijnen worden uitgerokken om in de container te passen.
+
+
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-content: space-between
+
+
+

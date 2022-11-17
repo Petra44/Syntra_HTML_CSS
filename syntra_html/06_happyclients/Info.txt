@@ -1,0 +1,14 @@
+Met de kennis die we verworven hebben met de klassikale oefening, probeer deze al uit te werken in de mate van het mogelijke.
+Belangrijk:
+* responsiveness: zorg dat wanneer het scherm smaller word dat de profielen onder elkaar komen
+* stel mountain in als achtergrond
+* probeer zo goed mogelijk het design te benaderen
+
+Uitdaging / optioneel (tot we dit klassikaal gedaan hebben - focus dus eerste op bovenstaande)
+* custom font gebruiken
+* icons gebruiken
+* hamburger menu
+
+NOTITIES
+Voor je begint, eerst nadenken over de boxen.
+Bovenbalk in een header, de rest in de main.

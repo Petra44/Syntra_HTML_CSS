@@ -1,0 +1,68 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 100%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hier komt jouw css */
+
+body {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 100px;
+}
+
+/* eerste blok */
+
+h1 {
+  font-family: Latoblack;
+  color: #666d89;
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: Latoblack;
+  src: url(media/fonts/Lato-Black.ttf);
+}
+
+p {
+  font-family: Latolight;
+  color: #767e9e;
+  font-size: 18px;
+  padding: 20px 0px 20px 0px;
+}
+
+@font-face {
+  font-family: Latolight;
+  src: url(media/fonts/Lato-Light.ttf);
+}
+
+/* tweede blok */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+}
+
+/* derde blok */
+
+section .portfolio {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+}
+
+.pb {
+  background-color: red;
+}
