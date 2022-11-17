@@ -1,0 +1,6 @@
+To do:
+
+* profielpagina aanpassen met linken
+* alle projecten bij werken
+* site van Karim nalezen
+* gitHub niet in één grote map?

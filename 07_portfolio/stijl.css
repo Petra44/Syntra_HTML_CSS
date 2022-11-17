@@ -1,6 +1,6 @@
 /* drie basisstijlregels om je te helpen */
 :root {
-  font-size: 100%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
 }
 html {
   box-sizing: border-box;
@@ -36,7 +36,7 @@ p {
   font-family: Latolight;
   color: #767e9e;
   font-size: 18px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 40px 0px;
 }
 
 @font-face {
@@ -64,5 +64,6 @@ section .portfolio {
 }
 
 .pb {
-  background-color: red;
+  background-color: #2d2f3b;
+  padding: 80px;
 }
