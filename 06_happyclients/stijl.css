@@ -11,23 +11,6 @@ html {
   box-sizing: inherit;
 }
 
-/* hier komt jouw css */
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-
-/* we gaan de font family declareren */
-@font-face {
-  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
-  font-family: customFont1;
-  src: url(media/fonts/BAUHS93.TTF);
-}
-
 /* we gaan de font family declareren */
 @font-face {
   /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
@@ -42,142 +25,124 @@ html {
   src: url(media/fonts/Fasthand-Regular.ttf);
 }
 
-body {
-  /** set the url of the image **/
-  background-image: url(media/images/berg.png);
-  /** set image size to "cover, this will ensure the images always covers either the maximum amount of height of width (whatever it is reaching first) **/
-  background-size: cover; /** alternatively set to 100% **/
-  /** to ensure we do not repeat the background image **/
-  background-repeat: no-repeat;
-  /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
-  background-color: rgba(209, 209, 209, 0.644);
-  /* to set padding to the body left & right*/
-  font-family: Lato;
+/* hier komt jouw css */
+
+/*navigatie*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f38181;
+  /* om de img & section verticaal te centreren */
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
 }
 
-nav {
-  align-items: center;
-  padding: 10px;
-  background-color: #f38181;
-  width: 100%;
+#current:hover {
+  color: #fbe389;
+  text-decoration: underline;
 }
 
 nav img {
-  height: 100%;
-}
-
-nav,
-nav section {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav section {
-  gap: 3rem;
-  color: white;
+  height: 4rem;
 }
 
 nav section ul {
   display: flex;
-  text-transform: uppercase;
-  gap: 3rem;
-  font-weight: 500;
+  gap: 2rem;
 }
 
-#current {
-  color: gold;
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-  position: relative;
+body {
+  background-image: url(media/images/berg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
+  background-color: rgba(209, 209, 209, 0.644);
+  font-family: Lato;
 }
 
-#current:after {
-  content: "";
-  background: gold;
-  position: absolute;
-  top: 1.4rem;
-  left: 0;
-  height: 3px;
-  width: 100%;
-}
-
-main {
-  padding: 1rem 3rem;
-}
-
-header h1 {
-  padding: 10px;
-  font-size: 2rem;
+h1 {
   font-family: Fasthand;
-}
-
-header h2 {
-  padding: 10px;
-  font-size: 2rem;
-  position: relative;
-  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  gap: 2rem;
+  /* 16.5 px * 7 */
+  padding: 7rem;
+}
+
+h2,
+h4 {
+  /*zodat ons pseudelement position absolute effect kan hebben*/
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+header h2::after,
+article div h4::after {
+  /* we maken een child element in de h2*/
+  content: "";
+  background-color: #f38181;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+header h2::after {
+  /* this left will overwrite above declared style rule as it comes after*/
+  left: calc(100% - (50% + 30px));
+}
+
+header h4::after {
+  /* this left will overwrite above declared style rule as it comes after*/
+  width: 200px;
+}
+
+main {
+  /* to set padding to the body left & right*/
+  padding: 0 150px;
 }
 
 main section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*wrapping & rapping*/
+  justify-content: center;
   gap: 50px;
-  justify-content: space-evenly;
-  padding: 0 15vw;
 }
 
-article {
-  width: 600px;
-  height: 170px;
+main article {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 520px;
 }
 
-article div {
+main article div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+/* alternatief voor bovenstaande:
+op
 
-article img {
-  width: 80%;
+h4 {
+    padding: 20px 0;
+}
+*/
+
+main article img {
   border-radius: 50%;
+  width: 130px;
+  padding: 10px;
 }
 
-article p {
-  line-height: 1.5rem;
-  color: #888;
-}
-
-article h3 {
-  text-transform: uppercase;
-}
-
-article h4 {
-  font-style: italic;
-  position: relative;
-  padding-bottom: 1.5rem;
-}
-
-article h4::after,
-header h2::after {
-  content: "";
-  background: #f38181;
-  position: absolute;
-  top: 35px;
-  left: 0;
-  height: 4px;
-  width: 60px;
-}
-
-header h2:after {
-  top: 60px;
-  left: calc(100% - (50% + 30px));
+p {
+  padding: 20px 0px 0px 0px;
 }
