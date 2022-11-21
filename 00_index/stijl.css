@@ -1,13 +1,18 @@
 /* drie basisstijlregels om je te helpen */
 :root {
   font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
-  color: whitesmoke;
+  color: honeydew;
   font-family: Anton;
 }
 
 @font-face {
   font-family: Anton;
   src: url(Media/Anton/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(Media/Oswald/Oswald-VariableFont_wght.ttf);
 }
 
 .fa-sharp {
@@ -39,21 +44,26 @@ body {
 }
 
 .title h2 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .quote {
   border: 5px solid goldenrod;
   box-sizing: border-box; /*box-sizing property houdt je element de aangegeven grootte ongeacht de padding die je geeft*/
   text-align: center;
-  font-size: 50px;
+  font-size: 35px;
   padding: 20px 20px;
-  margin: 160px 40px 0px 40px;
+  margin: 60px 40px 0px 40px;
   background-color: rgb(128, 128, 128, 0.6);
+  width: 50%;
 }
 
 .special {
   color: goldenrod;
+}
+
+.things {
+  height: 135px;
 }
 
 /* Arrow */
@@ -61,6 +71,7 @@ body {
 .arrow {
   position: relative;
   margin: 0 auto;
+  top: -53px;
   width: 100px;
 }
 
@@ -84,8 +95,8 @@ body {
   height: 25px;
   content: "";
   position: absolute;
+  background-color: goldenrod;
 }
-
 .arrow .point:before {
   top: -11px;
   left: -11px;
@@ -102,4 +113,100 @@ body {
   -webkit-transform: rotate(12deg);
   -moz-transform: rotate(12deg);
   -ms-transform: rotate(12deg);
+}
+
+/* grid */
+
+.container {
+  font-size: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px 40px 40px;
+  grid-template-rows: auto auto auto;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: center;
+  line-height: 2;
+}
+
+a:link {
+  color: #912610;
+}
+
+a:visited {
+  color: #912610;
+}
+
+a:hover {
+  color: wheat;
+}
+
+a:active {
+  color: honeydew;
+}
+
+.item {
+  background-color: rgb(240, 255, 240, 0.5);
+  border-radius: 6px;
+  padding: 10px;
+  font-family: Oswald;
+}
+
+.item h4 {
+  color: #912610;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.item ul {
+  font-size: 2rem;
+  list-style-type: circle;
+  padding: 30px;
+  color: #912610;
+}
+
+/* Blokje Karim */
+
+.item_Karim {
+  text-align: center;
+  color: #912610;
+  background-color: rgb(240, 255, 240, 0.5);
+  border-radius: 6px;
+  padding: 10px;
+  font-family: Oswald;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item_Karim ul {
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.item_Karim h4 {
+  color: #912610;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.item_games {
+  font-size: 3rem;
+  text-align: center;
+  color: #912610;
+  background-color: rgb(240, 255, 240, 0.5);
+  border-radius: 6px;
+  padding: 10px;
+  font-family: Oswald;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.item_games h4 {
+  color: #912610;
+  text-align: center;
+  font-size: 3rem;
 }

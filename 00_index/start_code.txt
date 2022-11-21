@@ -1,8 +1,0 @@
-<body>
-      <section>
-        <ul>
-          <li><a href="00_index/index.html">Profiel Peet</a></li>
-          <li><a href="01_recept/index.html">Recept Hummus</a></li>
-        </ul>
-      </section>
-    </body>

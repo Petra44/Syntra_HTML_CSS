@@ -9,6 +9,7 @@ header h1 {
 header h2 {
   font-size: 25px;
   color: #ff1b30;
+  padding: 10px 0 20px;
 }
 
 header h1,
@@ -21,6 +22,10 @@ header h2 {
   width: 100%;
 }
 
+#tesla-footer {
+  transform: scale(0.7);
+}
+
 footer {
   padding: 27px;
   display: flex;
@@ -29,34 +34,44 @@ footer {
 
 body {
   background-color: black;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 .wrapper {
   /* dan is het maximum 1000 maar bij verkleinen gaat de inhoud mee kleiner schalen */
   max-width: 1000px;
+  padding: 70px;
+  background-color: white;
+  height: 100%;
+}
+
+.flex-column-center {
   /* om flexbox te gebruiken */
   display: flex;
   /* om alle flex elementen onder elkaar te zeten */
   flex-direction: column;
   /* alle elementen centreren */
   align-content: center;
-  
-  padding: 70px;
-  background-color: white;
-  height: 100%;
+}
+
+main {
+  font-family: Arial;
 }
 
 section {
   border-bottom: 1px solid;
   padding: 10px;
+  font-size: 12px;
 }
 
 li {
-  list-style-image: url(bg_listitem.jpg);
-  /* OR */
-  list-style-type: '👉';
-  padding-inline-start: 1ch;
-  list-style-position: inside;
+  /* list-style-image: url(bg_listitem.jpg); */
+  /* alternatief voor bovenstaande met meer flexibilteit voor aanpassen van 
+    positie & grootte van de list style afbeelding  */
+  background-image: url(bg_listitem.jpg);
+  background-repeat: no-repeat;
+  background-size: 8px;
+  padding-left: 10px;
+  background-position-y: center;
 }
