@@ -1,6 +1,163 @@
 /* drie basisstijlregels om je te helpen */
-:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
-html {box-sizing: border-box;}
-*, *:before, *:after {box-sizing: inherit;}
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-/* hier komt jouw css */
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(media/fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Medium;
+  src: url(media/fonts/Raleway/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: Raleway-extraBold;
+  src: url(media/fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Montserat;
+  src: url(media/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: Raleway-semiBold;
+  src: url(media/fonts/Raleway/Raleway-SemiBold.ttf);
+}
+
+body {
+  color: #ffffff;
+}
+
+main {
+  background-image: url("/08_mountain/media/images/background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+}
+
+/*navigatie*/
+.titel {
+  font-size: 3rem;
+  font-family: Raleway-Regular;
+}
+
+nav,
+ul,
+li {
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+ul.navigatie {
+  font-family: Montserat;
+  font-size: 1.3rem;
+}
+
+/*header*/
+h1 {
+  font-family: Raleway-Medium;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: Raleway-extraBold;
+  font-size: 4rem;
+}
+
+p.header {
+  font-family: Montserat;
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+p.header {
+  padding: 8px;
+  text-align: center;
+}
+
+button {
+  font-family: Raleway-extraBold;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #998675;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 140px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20%;
+}
+
+aside {
+  padding: 10px;
+  text-align: center;
+}
+
+.right,
+.left {
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  nav,
+  header {
+    flex-direction: column;
+  }
+}
+
+/*Footer*/
+
+article {
+  color: #998675;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, auto);
+  padding: 100px;
+  text-align: center;
+}
+
+figure {
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+}
+
+h4 {
+  font-family: Raleway-semiBold;
+  font-size: 3rem;
+}
+
+p {
+  font-family: Montserat;
+  font-size: 1.5rem;
+}
+
+/* streepje onderaan - responsive */
