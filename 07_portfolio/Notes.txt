@@ -1,0 +1,15 @@
+***minmax()****
+om je grid responsive te maken
+https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
+
+
+****grid items***
+.portfolio-section div img {
+    width: 100%; ---> zo vult elke afbeelding het volledige blokje
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: scale 300ms ease, filter 500ms ease;
+	---> animatie op de afbeelding
+
+    transition: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+

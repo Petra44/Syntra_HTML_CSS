@@ -1,7 +1,16 @@
 /* drie basisstijlregels om je te helpen */
 :root {
   font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+
+  /* we definiëren hier al kleuren, die we kunnen hergebruiken in de rest van de css
+    we stellen die 1 keer in, en hergebruiken die overal
+    op die manier, als je ooit dark-background-color moet veranderne, doe je dat op 1 plaats
+    */
+  --dark-font-color: #666d89;
+  --light-font-color: rgba(255, 255, 255, 0.446);
+  --dark-background-color: rgb(52, 57, 72);
 }
+
 html {
   box-sizing: border-box;
 }
@@ -11,59 +20,90 @@ html {
   box-sizing: inherit;
 }
 
-/* hier komt jouw css */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+  font-family: Lato;
+  src: url(media/fonts/Lato-Regular.ttf);
+}
 
 body {
-  background-color: #f2f2f2;
+  font-size: 1.6rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: black;
+  font-family: Lato;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+article {
+  display: flex;
+  gap: 20px;
+  width: 285px;
+  /* ensure it takes the full space when possible */
+  flex-grow: 1;
+}
+
+main > section {
+  padding: 40px;
+  background-color: white;
+  color: grey;
+}
+
+main > section.services-section > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main > section.portfolio-section > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  color: var(--light-font-color);
+  background-color: var(--dark-background-color);
+  gap: 20px;
+}
+
+.portfolio-section div img {
   width: 100%;
-  padding: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  transition: scale 300ms ease, filter 500ms ease;
 }
 
-/* eerste blok */
-
-h1 {
-  font-family: Latoblack;
-  color: #666d89;
-  font-size: 30px;
+img:hover {
+  scale: 1.1;
+  filter: contrast(120%);
 }
 
-@font-face {
-  font-family: Latoblack;
-  src: url(media/fonts/Lato-Black.ttf);
+.icon {
+  padding: 15px;
 }
 
-p {
-  font-family: Latolight;
-  color: #767e9e;
-  font-size: 18px;
-  padding: 20px 0px 40px 0px;
-}
-
-@font-face {
-  font-family: Latolight;
-  src: url(media/fonts/Lato-Light.ttf);
-}
-
-/* tweede blok */
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 0px;
-}
-
-.grid-container > div {
-  text-align: center;
-}
-
-/* derde blok */
-
-section .portfolio {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 25px;
-}
-
-.pb {
-  background-color: #2d2f3b;
-  padding: 80px;
+figure:has(img.icon) {
+  border: solid grey;
+  border-radius: 50%;
 }

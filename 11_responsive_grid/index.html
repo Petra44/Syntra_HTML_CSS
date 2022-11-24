@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="stijl.css" />
+    <title>Responsive grid</title>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">ONE</div>
+      <div class="card">TWO</div>
+      <div class="card">THREE</div>
+      <div class="card">FOUR</div>
+      <div class="card">FIVE</div>
+      <div class="card">SIX</div>
+      <div class="card">SEVEN</div>
+      <div class="card">EIGHT</div>
+      <div class="card">NINE</div>
+      <div class="card">TEN</div>
+      <div class="card">ELEVEN</div>
+      <div class="card">TWELVE</div>
+    </div>
+    <pre>
+      -> parent display: grid
+      -> dan media breakpoints (@media (min-width: SOME_WIDTH){}) voor de verschillende breedtes met het aanpassen
+      grid-template-columns: repeat(NUM_COLUMNS, 1fr)
+    </pre>
+    <pre>OF</pre>
+    <pre>
+      -> Zonder media queries door gebruik te maken van minmax(). 
+      -> media queries verwijderen uit CSS en in de parent (.cards selector) 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); hier zal de kolom verspringen bij 300px
+    </pre>
+    <ul>
+      <li><a href="/index.html">HOME</a></li>
+      <li>
+        <a
+          href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe"
+          target="_blank"
+          >Article Travishorn</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

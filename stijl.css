@@ -261,6 +261,9 @@ a:active {
   transition: all 0.3s ease-out;
 }
 
+.to-top:a {
+  color: whitesmoke;
+}
 .to-top:visited {
   color: whitesmoke;
 }
