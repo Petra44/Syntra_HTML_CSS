@@ -133,15 +133,15 @@ aside {
   }
 }
 
-/*Footer*/
+/*Footer - responsive*/
 
 article {
   color: #998675;
   display: grid;
   gap: 50px;
-  grid-template-columns: repeat(4, auto);
   padding: 100px;
   text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 figure {
@@ -158,6 +158,16 @@ h4 {
 p {
   font-family: Montserat;
   font-size: 1.5rem;
+  display: grid;
+  align-items: end;
+  justify-items: center;
 }
 
-/* streepje onderaan - responsive */
+p.line::after {
+  content: "";
+  background-color: #998675;
+  width: 90px;
+  height: 4px;
+  display: grid;
+  margin: 20px;
+}

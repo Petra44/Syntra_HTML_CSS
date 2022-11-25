@@ -1,0 +1,94 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: Raleway-regular;
+  src: url(/14_nieuw/media/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway-medium;
+  src: url(/14_nieuw/media/Raleway/Raleway-Medium.ttf);
+}
+
+body {
+  color: #ffffff;
+}
+
+main {
+  background-image: url("/14_nieuw/media/pixar_background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+  margin: 40px;
+  height: 620px;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: Raleway-regular;
+  text-align: center;
+  padding: 140px 300px 0px;
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  color: #42325f;
+  border-top: 5px double;
+  width: 250px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #42325f;
+  font-family: Raleway-regular;
+  text-align: center;
+}
+
+h4 {
+  font-family: Raleway-medium;
+  color: #42325f;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 30px;
+  justify-items: center;
+}
+
+.taken img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: scale 300ms ease, filter 500ms ease;
+}
+
+img:hover {
+  scale: 1.1;
+  filter: contrast(120%);
+}
+
+footer {
+  background-color: #42325f;
+  height: 200px;
+}
