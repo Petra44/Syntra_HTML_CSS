@@ -6,7 +6,6 @@ Alle links via https://petra-html-css-syntra_2023.surge.sh/.
 
 To do
 
-- Homepage verder maken (za)
 - FAQ's Karim lezen (za)
 - Xit oefening maken (zo)
 - formulieren! (zo)
@@ -14,6 +13,7 @@ To do
 
 Done:
 
+- Nieuwe homepage oefeningen;
 - Oefeningen HTML;
 - Forms W3schools nagelezen: https://www.w3schools.com/Css/css_form.asp;
 - Responsive grid article Travis gelezen;

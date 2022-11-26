@@ -1,0 +1,299 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+  color: honeydew;
+  font-family: Anton;
+}
+
+@font-face {
+  font-family: Anton;
+  src: url(Media/Anton/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(Media/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+/* icon */
+.fa-sharp {
+  font-size: 40px;
+  line-height: inherit;
+  vertical-align: middle;
+}
+/*body*/
+body {
+  background-image: url("Media/Home_highway.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+}
+
+/*title*/
+.title {
+  gap: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 120px;
+}
+
+.title h2 {
+  font-size: 45px;
+}
+
+/*pseudo-element*/
+.title h2::selection {
+  color: #912610;
+  background: goldenrod;
+}
+
+/*quote*/
+.quote {
+  border: 5px solid goldenrod;
+  box-sizing: border-box; /*box-sizing property houdt je element de aangegeven grootte ongeacht de padding die je geeft*/
+  text-align: center;
+  font-size: 35px;
+  padding: 20px 20px;
+  margin: 60px 40px 0px 40px;
+  background-color: rgb(128, 128, 128, 0.6);
+  width: 50%;
+}
+
+/* Arrow */
+.special {
+  color: goldenrod;
+}
+
+.things {
+  height: 135px;
+  position: sticky;
+  top: 30px;
+}
+
+.arrow {
+  position: relative;
+  margin: 0 auto;
+  top: -53px;
+  width: 100px;
+}
+
+.arrow .curve {
+  border: 8px solid #be5f4b;
+  border-color: transparent transparent transparent goldenrod;
+  height: 170px;
+  width: 800px;
+  border-radius: 230px 0 0 150px;
+}
+
+.arrow .point {
+  position: absolute;
+  left: 18px;
+  top: 155px;
+}
+
+.arrow .point:before,
+.arrow .point:after {
+  border: 3px solid goldenrod;
+  height: 25px;
+  content: "";
+  position: absolute;
+  background-color: goldenrod;
+}
+.arrow .point:before {
+  top: -11px;
+  left: -11px;
+  transform: rotate(-74deg);
+  -webkit-transform: rotate(-74deg);
+  -moz-transform: rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+  left: 5px;
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+}
+
+/* grid */
+
+.container {
+  font-size: 4rem;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 0px 200px 50px;
+  justify-content: center;
+  line-height: 1.7;
+}
+
+a:link {
+  color: #912610;
+}
+
+a:visited {
+  color: #912610;
+}
+
+a:hover {
+  color: wheat;
+}
+
+a:active {
+  color: honeydew;
+}
+
+.item {
+  background-color: rgb(240, 255, 240, 0.5);
+  border-radius: 6px;
+  border: 5px solid;
+  border-color: goldenrod;
+  padding: 10px;
+  font-family: Oswald;
+}
+
+.item h4 {
+  color: #912610;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.item h4::first-letter {
+  color: #912610;
+  font-size: 50px;
+}
+
+.item ul {
+  font-size: 2rem;
+  list-style-type: circle;
+  padding: 30px;
+  color: #912610;
+}
+
+/* Blokje Karim */
+
+.item_Karim {
+  text-align: center;
+  color: #912610;
+  background-color: rgb(240, 255, 240, 0.5);
+  border-radius: 6px;
+  padding: 10px;
+  border: 5px solid;
+  font-family: Oswald;
+}
+
+.item_Karim ul {
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.item_Karim h4 {
+  color: #912610;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.item_Karim h4::first-letter {
+  color: #912610;
+  font-size: 50px;
+}
+
+/*games*/
+.item_games h4::first-letter {
+  color: #912610;
+  font-size: 50px;
+}
+
+.item_games {
+  font-size: 3rem;
+  text-align: center;
+  border: 5px solid;
+  color: #912610;
+  background-color: rgb(240, 255, 240, 0.5);
+  border-radius: 6px;
+  padding: 10px;
+  font-family: Oswald;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.item_games h4 {
+  color: #912610;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* back to top */
+.up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.to-top {
+  font-family: Calibri, arial, sans-serif;
+  margin: 2em;
+  font-size: 200%;
+  text-align: center;
+  padding-top: 1.8em;
+  display: inline-block; /* or block */
+  position: relative;
+  border-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.to-top:a {
+  color: whitesmoke;
+}
+.to-top:visited {
+  color: whitesmoke;
+}
+
+.to-top:before {
+  content: "▲";
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+  color: whitesmoke;
+}
+
+.to-top:hover {
+  color: goldenrod;
+  border-color: goldenrod;
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
+}
+
+p a:link {
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+p a:visited {
+  color: whitesmoke;
+  font-size: 3rem;
+}
