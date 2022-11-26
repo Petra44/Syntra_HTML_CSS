@@ -32,7 +32,12 @@ body {
 
 nav {
   font-size: 2.5rem;
-  padding: 15px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
 }
 
 nav,
@@ -48,6 +53,7 @@ h2 a:visited {
 
 a i {
   transition: all 0.3s linear;
+  color: #42325f;
 }
 
 a:hover i {
@@ -74,8 +80,7 @@ main {
   background-color: #cccccc;
   background-position: center;
   background-size: cover;
-  margin: 0px 40px;
-  height: 620px;
+  height: 665px;
 }
 
 .waviy {
@@ -130,10 +135,10 @@ h4 {
 
 article {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 10px;
-  margin: 38px;
-  justify-items: center;
+  margin: 38px auto;
+  max-width: 1000px;
 }
 
 figure.polaroid {
@@ -194,19 +199,5 @@ footer a:active {
 }
 
 h5 {
-  padding: 2px;
+  padding: 1.8px;
 }
-
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
-
-/* body {
-  background-color: #111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-} */
