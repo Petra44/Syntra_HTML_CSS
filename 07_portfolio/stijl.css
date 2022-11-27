@@ -28,8 +28,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  padding-left: 10vw;
-  padding-right: 10vw;
+
   background-color: black;
   font-family: Lato;
 }
@@ -100,10 +99,12 @@ img:hover {
 }
 
 .icon {
-  padding: 15px;
+  padding: 20px;
 }
 
 figure:has(img.icon) {
   border: solid grey;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
 }

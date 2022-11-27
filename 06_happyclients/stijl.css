@@ -29,14 +29,15 @@ html {
 
 /*navigatie*/
 nav {
+  gap: 20px;
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: #f38181;
-  /* om de img & section verticaal te centreren */
+  background-color: rgb(243, 129, 129);
   align-items: center;
   color: white;
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 
 #current:hover {
@@ -51,6 +52,7 @@ nav img {
 nav section ul {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 body {

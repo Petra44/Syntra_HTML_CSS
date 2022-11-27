@@ -138,11 +138,10 @@ article {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 10px;
   margin: 38px auto;
-  max-width: 1000px;
+  max-width: 60vw;
 }
 
 figure.polaroid {
-  width: 100%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
@@ -169,7 +168,7 @@ footer {
   background-color: #42325f;
   height: 140px;
   color: #cccccc;
-  padding: 40px 10px 20px 30px;
+  padding: 40px 10px 30px 30px;
   font-family: Montsserat;
   font-size: 2rem;
 }
@@ -198,6 +197,29 @@ footer a:active {
   font-weight: bold;
 }
 
-h5 {
+.links {
+  display: flex;
+  flex: wrap;
   padding: 1.8px;
+}
+
+.links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 35px;
+  flex-direction: column;
+}
+
+.links li {
+  list-style-image: url("/media/iconmonstr-link.png");
+}
+
+.copyright {
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 10px;
 }
