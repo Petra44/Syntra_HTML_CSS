@@ -4,10 +4,8 @@ https://petra-html-css-syntra_2023.surge.sh/: link naar alle CSS/HTML oefeningen
 
 TODO
 
-- Xit oefening maken (zo)
-- formulieren! (zo)
-
-- CSS grid.io video's kijken + flexbox (ma-woe)
+- Xit oefening verder maken: pseudo-element lijntje/ footer/ kleine posities;
+- CSS grid.io video's kijken + flexbox (ma-woe);
 
 Resources grid:
 
