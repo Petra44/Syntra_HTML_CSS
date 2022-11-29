@@ -2,13 +2,9 @@
 
 https://petra-html-css-syntra_2023.surge.sh/: link naar alle CSS/HTML oefeningen FSD 2022-2023.
 
-TODO
+TODO video:
 
-- Xit oefening verder maken: pseudo-element lijntje/ footer/ kleine posities;
 - CSS grid.io video's kijken + flexbox (ma-woe);
-
-Resources grid:
-
 - great resource by Rachel Andrew https://gridbyexample.com/
 - Kevin Powel video on CSS grid https://www.youtube.com/watch?v=rg7Fvvl3taU
 - Kevin Powel video on responsive grid https://www.youtube.com/watch?v=sKFW3wek21Q
@@ -27,6 +23,7 @@ Transition:
 
 DONE
 
+- Xit oefening verder maken: pseudo-element lijntje/ footer/ kleine posities;
 - Portfolio (including responsive grid & gutters/gap die hetzelfde blijft)
 - Happy Clients (waarbij je :after gebruikt voor de roze streepjes, flexbox voor de navigatie)
 - FAQ's Karim lezen
