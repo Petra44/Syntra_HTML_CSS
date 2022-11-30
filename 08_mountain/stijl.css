@@ -85,9 +85,8 @@ p.header {
 }
 
 h1,
-h2,
-p.header {
-  padding: 8px;
+h2 {
+  padding: 5px;
   text-align: center;
 }
 
@@ -109,21 +108,28 @@ button {
 
 header {
   display: flex;
-  flex: wrap;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-  padding: 20%;
+  padding: 20% 25%;
 }
 
 aside {
-  padding: 10px;
+  position: relative;
   text-align: center;
 }
 
-.right,
+.tekst {
+  padding: 8px 8px 50px 8px;
+}
+
 .left {
-  padding: 20px;
+  position: absolute;
+  left: 40px;
+}
+
+.right {
+  position: absolute;
+  right: 40px;
 }
 
 @media screen and (max-width: 700px) {
